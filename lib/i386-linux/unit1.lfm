@@ -1,0 +1,381 @@
+object Form1: TForm1
+  Left = 245
+  Height = 805
+  Top = 176
+  Width = 1508
+  Caption = 'Form1'
+  ClientHeight = 805
+  ClientWidth = 1508
+  OnCreate = FormCreate
+  LCLVersion = '1.2.4.0'
+  object mQLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 24
+    Width = 57
+    Caption = 'mQLabel'
+    ParentColor = False
+  end
+  object lLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 56
+    Width = 38
+    Caption = 'lLabel'
+    ParentColor = False
+  end
+  object mQEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 17
+    Width = 80
+    TabOrder = 0
+    Text = 'mQEdit'
+  end
+  object LEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 49
+    Width = 80
+    TabOrder = 1
+    Text = 'LEdit'
+  end
+  object fQLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 119
+    Width = 50
+    Caption = 'fQLabel'
+    ParentColor = False
+  end
+  object fQEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 112
+    Width = 80
+    TabOrder = 2
+    Text = 'fQEdit'
+  end
+  object trLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 151
+    Width = 45
+    Caption = 'trLabel'
+    ParentColor = False
+  end
+  object trEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 144
+    Width = 80
+    TabOrder = 3
+    Text = 'trEdit'
+  end
+  object tuLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 183
+    Width = 48
+    Caption = 'tuLabel'
+    ParentColor = False
+  end
+  object tuEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 176
+    Width = 80
+    TabOrder = 4
+    Text = 'tuEdit'
+  end
+  object vuLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 215
+    Width = 49
+    Caption = 'vuLabel'
+    ParentColor = False
+  end
+  object vuEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 208
+    Width = 80
+    TabOrder = 5
+    Text = 'vuEdit'
+  end
+  object cqLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 88
+    Width = 49
+    Caption = 'cqLabel'
+    ParentColor = False
+  end
+  object symulacjaWykres: TShape
+    Left = 256
+    Height = 300
+    Top = 25
+    Width = 500
+  end
+  object tsymLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 247
+    Width = 67
+    Caption = 'tsymLabel'
+    ParentColor = False
+  end
+  object tsymEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 240
+    Width = 80
+    TabOrder = 6
+    Text = 'tsymEdit'
+  end
+  object symulacjaBut: TButton
+    Left = 24
+    Height = 25
+    Top = 320
+    Width = 75
+    Caption = 'SYMULACJA'
+    OnClick = symulacjaButClick
+    TabOrder = 7
+  end
+  object StopBut: TButton
+    Left = 24
+    Height = 25
+    Top = 536
+    Width = 75
+    Caption = 'STOP'
+    OnClick = StopButClick
+    TabOrder = 8
+  end
+  object dtLabel: TLabel
+    Left = 24
+    Height = 21
+    Top = 280
+    Width = 48
+    Caption = 'dtLabel'
+    ParentColor = False
+  end
+  object dtEdit: TEdit
+    Left = 88
+    Height = 33
+    Top = 273
+    Width = 80
+    TabOrder = 9
+    Text = 'dtEdit'
+  end
+  object xmaxLabel: TLabel
+    Left = 184
+    Height = 21
+    Top = 8
+    Width = 35
+    Caption = 'xmax'
+    ParentColor = False
+  end
+  object xminLabel: TLabel
+    Left = 184
+    Height = 21
+    Top = 313
+    Width = 31
+    Caption = 'xmin'
+    ParentColor = False
+  end
+  object vmaxLabel: TLabel
+    Left = 184
+    Height = 21
+    Top = 33
+    Width = 34
+    Caption = 'vmax'
+    ParentColor = False
+  end
+  object vminLabel: TLabel
+    Left = 184
+    Height = 21
+    Top = 289
+    Width = 30
+    Caption = 'vmin'
+    ParentColor = False
+  end
+  object vmaxEdit: TEdit
+    Left = 216
+    Height = 33
+    Top = 33
+    Width = 40
+    TabOrder = 10
+    Text = 'vmaxEdit'
+  end
+  object vminEdit: TEdit
+    Left = 216
+    Height = 33
+    Top = 282
+    Width = 40
+    TabOrder = 11
+    Text = 'vminEdit'
+  end
+  object xvLabel: TLabel
+    Left = 184
+    Height = 21
+    Top = 177
+    Width = 20
+    Caption = 'x/v'
+    ParentColor = False
+  end
+  object xvEdit: TEdit
+    Left = 208
+    Height = 33
+    Top = 170
+    Width = 40
+    TabOrder = 12
+    Text = 'xvEdit'
+  end
+  object impulsWykres: TShape
+    Left = 768
+    Height = 300
+    Top = 24
+    Width = 500
+  end
+  object impulsBut: TButton
+    Left = 24
+    Height = 25
+    Top = 360
+    Width = 75
+    Caption = 'IMPULS'
+    OnClick = impulsButClick
+    TabOrder = 13
+  end
+  object Label1: TLabel
+    Left = 264
+    Height = 21
+    Top = 336
+    Width = 54
+    Caption = 'vq(tr) = '
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 264
+    Height = 21
+    Top = 360
+    Width = 55
+    Caption = 'xq(tr) = '
+    ParentColor = False
+  end
+  object vq_trLabel: TLabel
+    Left = 312
+    Height = 1
+    Top = 336
+    Width = 1
+    ParentColor = False
+  end
+  object xq_trLabel: TLabel
+    Left = 312
+    Height = 1
+    Top = 360
+    Width = 1
+    ParentColor = False
+  end
+  object trLabel2: TLabel
+    Left = 768
+    Height = 21
+    Top = 336
+    Width = 25
+    Caption = 'tr ='
+    ParentColor = False
+  end
+  object vuLabel2: TLabel
+    Left = 768
+    Height = 21
+    Top = 360
+    Width = 29
+    Caption = 'vu ='
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 768
+    Height = 21
+    Top = 384
+    Width = 54
+    Caption = 'vq(tr) = '
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 768
+    Height = 21
+    Top = 408
+    Width = 55
+    Caption = 'xq(tr) = '
+    ParentColor = False
+  end
+  object vq_trLabel1: TLabel
+    Left = 816
+    Height = 1
+    Top = 384
+    Width = 1
+    ParentColor = False
+  end
+  object xq_trLabel1: TLabel
+    Left = 816
+    Height = 1
+    Top = 408
+    Width = 1
+    ParentColor = False
+  end
+  object vqtrLabel: TLabel
+    Left = 816
+    Height = 21
+    Top = 384
+    Width = 8
+    Caption = 'x'
+    ParentColor = False
+  end
+  object xqtrLabel: TLabel
+    Left = 816
+    Height = 21
+    Top = 408
+    Width = 8
+    Caption = 'x'
+    ParentColor = False
+  end
+  object porownanieWykres: TShape
+    Left = 256
+    Height = 300
+    Top = 456
+    Width = 500
+  end
+  object czyscBut: TButton
+    Left = 256
+    Height = 25
+    Top = 760
+    Width = 75
+    Caption = 'CZYŚĆ'
+    OnClick = czyscButClick
+    TabOrder = 14
+  end
+  object Label5: TLabel
+    Left = 888
+    Height = 21
+    Top = 348
+    Width = 102
+    Caption = 'Zapisz do pliku :'
+    ParentColor = False
+  end
+  object ImpulsPlikEdit: TEdit
+    Left = 1008
+    Height = 33
+    Top = 344
+    Width = 80
+    TabOrder = 15
+    Text = 'ImpulsPlikEdit'
+  end
+  object ImpulsCheckBox: TCheckBox
+    Left = 1112
+    Height = 25
+    Top = 344
+    Width = 66
+    Caption = 'Zapisz'
+    TabOrder = 16
+  end
+end

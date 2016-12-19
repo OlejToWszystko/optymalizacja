@@ -1,0 +1,1 @@
+model ³adunku, impuls jednostkowy i zapis do tablicy, zapis do pliku, wektor p (przeciwieñstwo gradientu funkcji celu)
